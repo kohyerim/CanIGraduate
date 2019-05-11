@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:background="@color/title"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_기초교양"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                android:text="기초교양"
+                android:textColor="@color/highlight" />
+
+            <ProgressBar
+                android:id="@+id/PB기초교양"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="330dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_전공탐색"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                android:text="전공탐색"
+                android:textColor="@color/highlight" />
+
+            <ProgressBar
+                android:id="@+id/PB_전공탐색"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="330dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_전인교양"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                android:text="전인교양"
+                android:textColor="@color/highlight" />
+
+            <ProgressBar
+                android:id="@+id/PB_전인교양"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="330dp"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_JNU"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                android:text="JNU"
+                android:textColor="@color/highlight" />
+
+            <ProgressBar
+                android:id="@+id/PB_JNU"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="330dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_필수전공"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                android:text="필수전공"
+                android:textColor="@color/highlight" />
+
+            <ProgressBar
+                android:id="@+id/PB_필수전공"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="330dp"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_카카오트랙"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@color/title"
+                android:text="카카오트랙"
+                android:textColor="@color/highlight" />
+
+            <ProgressBar
+                android:id="@+id/PB_카카오트랙"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="330dp"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/B_back"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/title"
+        android:gravity="center"
+        android:text="뒤로가기" />
+
+
+</LinearLayout>

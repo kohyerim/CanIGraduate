@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:background="@color/title">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/highlight"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_majorsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="전인교양"
+            android:textColor="@color/highlight"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="언어와 문학"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="역사와 철학"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="사회와 문화"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="과학과 기술"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="예술과 건강"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="인성과 융복합사고"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_basic"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="4분야 이상, 5개과목 이수"
+            android:textColor="@color/highlight"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/PB전인교양"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+    </LinearLayout>
+
+</LinearLayout>
