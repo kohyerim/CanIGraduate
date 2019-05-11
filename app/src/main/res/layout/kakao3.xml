@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:background="@color/title">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/highlight"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_majorsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="카카오트랙3"
+            android:textColor="@color/highlight"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="기초웹개발론"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="객체지향프로그래밍"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="알고리즘설계 및 분석"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="운영체제 및 설계"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="고급웹 개발론"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="데이터베이스"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

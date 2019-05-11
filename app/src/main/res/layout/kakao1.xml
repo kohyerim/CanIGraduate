@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:background="@color/title">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/highlight"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_majorsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="카카오트랙 2"
+            android:textColor="@color/highlight"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="화일처리 및 응용"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="오픈소스개발방법론"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="자료구조"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="이산수학"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
