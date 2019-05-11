@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+<<<<<<< HEAD
         android:layout_width="129dp"
         android:layout_height="62dp"
         android:layout_marginStart="184dp"
@@ -18,4 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+=======
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainView"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="325dp" />
+>>>>>>> 0ca226bae9101edd675d98ef826b56f0d6781714
 </android.support.constraint.ConstraintLayout>
