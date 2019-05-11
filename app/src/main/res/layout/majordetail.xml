@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:background="@color/title">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/highlight"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_majorsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="필수전공"
+            android:textColor="@color/highlight"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="자료구조"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="정보통신"
+                android:textColor="@color/highlight"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="SW융합캡스톤디자인1"
+                android:textColor="@color/highlight"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="SW융합캡스톤디자인2"
+                android:textColor="@color/highlight"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="SW융합캡스톤디자인3"
+                android:textColor="@color/highlight"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_basic"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="필수이수과목"
+            android:textColor="@color/highlight"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/PB필수전공"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+    </LinearLayout>
+
+</LinearLayout>
