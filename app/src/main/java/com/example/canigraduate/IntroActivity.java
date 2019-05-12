@@ -21,7 +21,7 @@ public class IntroActivity extends Activity {
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+                startActivity(new Intent(IntroActivity.this, StartActivity.class));
                 finish();
             }
         }, 2000);
