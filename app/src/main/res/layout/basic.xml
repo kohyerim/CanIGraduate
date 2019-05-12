@@ -26,7 +26,6 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/detail_basic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -39,9 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
+            android:buttonTint="@color/highlight"
             android:checked="false"
             android:text="글쓰기"
-            android:buttonTint="@color/highlight"
             android:textColor="@color/highlight"
             android:textSize="30sp" />
 
@@ -113,7 +112,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/detail_basic"
+            android:id="@+id/basic"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center"

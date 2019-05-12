@@ -59,7 +59,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/detail_basic"
+                android:id="@+id/basic"
                 android:layout_width="90dp"
                 android:layout_height="30dp"
                 android:text="토익점수"

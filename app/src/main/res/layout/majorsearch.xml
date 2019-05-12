@@ -29,8 +29,6 @@
             android:id="@+id/detail_majorsearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="0"
-            android:layout_marginRight="0"
             android:gravity="center"
             android:text="전공탐색"
             android:textColor="@color/highlight"
@@ -110,7 +108,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/detail_basic"
+            android:id="@+id/basic"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center"
