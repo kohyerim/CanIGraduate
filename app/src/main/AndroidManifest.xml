@@ -19,6 +19,15 @@
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CollectviewActivity"></activity>
+        <activity android:name=".Graduationpoint_kakaoActivity"></activity>
+        <activity android:name=".BasicActivity"></activity>
+        <activity android:name=".MajorsearchActivity"></activity>
+        <activity android:name=".WholecultureActivity"></activity>
+        <activity android:name=".MajordetailActivity"></activity>
+        <activity android:name=".Kakao2Activity"></activity>
+        <activity android:name=".Kakao3Activity"></activity>
+        <activity android:name=".Kakao4Activity"></activity>
     </application>
 
 </manifest>

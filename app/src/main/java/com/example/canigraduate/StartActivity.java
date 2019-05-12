@@ -19,7 +19,7 @@ public class StartActivity extends Activity {
     }
 
     protected void onClick(View view){
-        startActivity(new Intent(StartActivity.this, LoginActivity.class));
+        startActivity(new Intent(StartActivity.this, CollectviewActivity.class));
         finish();
     }
 }
