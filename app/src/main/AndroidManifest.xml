@@ -9,15 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".IntroActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IntroActivity"></activity>
+        <activity android:name=".StartActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CollectviewActivity"></activity>
+        <activity android:name=".Graduationpoint_kakaoActivity"></activity>
+        <activity android:name=".BasicActivity"></activity>
+        <activity android:name=".MajorsearchActivity"></activity>
+        <activity android:name=".WholecultureActivity"></activity>
+        <activity android:name=".MajordetailActivity"></activity>
+        <activity android:name=".Kakao2Activity"></activity>
+        <activity android:name=".Kakao3Activity"></activity>
+        <activity android:name=".Kakao4Activity"></activity>
     </application>
 
 </manifest>

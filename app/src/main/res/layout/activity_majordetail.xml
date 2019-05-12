@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
@@ -9,7 +9,7 @@
         android:layout_width="350dp"
         android:layout_height="470dp"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:background="#FFFFFF"
         android:orientation="vertical">
 
@@ -21,18 +21,20 @@
             android:layout_marginTop="5dp"
             android:background="#FFFFFF"
             android:gravity="center"
-            android:text="X"
+            android:text="@string/exist"
+            android:onClick="onClick"
             android:textColor="@color/highlight"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="290dp" />
 
         <TextView
             android:id="@+id/detail_majorsearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="전공탐색"
+            android:text="@string/majordetail"
             android:textColor="@color/highlight"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,9 +49,10 @@
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
-                android:text="인문계열"
+                android:text="@string/datastructure"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" />
+                android:textSize="30sp" tools:targetApi="lollipop"
+                android:layout_marginStart="40dp" />
 
             <CheckBox
                 android:layout_width="183dp"
@@ -58,42 +61,46 @@
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
-                android:text="사회계열"
+                android:text="@string/informationCommunication"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" />
+                android:textSize="30sp" tools:targetApi="lollipop"
+                android:layout_marginStart="40dp" />
 
             <CheckBox
-                android:layout_width="281dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
-                android:text="자연과학계열"
+                android:text="@string/swcapston1"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" />
+                android:textSize="25sp" tools:targetApi="lollipop"
+                android:layout_marginStart="40dp" />
 
             <CheckBox
-                android:layout_width="183dp"
+                android:layout_width="303dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:checked="false"
-                android:text="공학계열"
                 android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="@string/swcapstion2"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" />
+                android:textSize="25sp"
+                android:layout_marginStart="40dp" tools:targetApi="lollipop" />
 
             <CheckBox
-                android:layout_width="183dp"
+                android:layout_width="302dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:checked="false"
-                android:text="인문계열"
                 android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="@string/swcapston3"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" />
+                android:textSize="25sp"
+                android:layout_marginStart="40dp" tools:targetApi="lollipop" />
 
 
         </LinearLayout>
@@ -112,12 +119,12 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center"
-            android:text="소속계열 6학점 이상, 2개분야 이수"
+            android:text="@string/necessarysubject"
             android:textColor="@color/highlight"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <ProgressBar
-            android:id="@+id/PB전공탐색"
+            android:id="@+id/PB필수전공"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="55dp" />

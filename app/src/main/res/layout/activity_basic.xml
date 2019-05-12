@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
@@ -9,29 +9,31 @@
         android:layout_width="350dp"
         android:layout_height="470dp"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:background="#FFFFFF"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/B_back"
             android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="290dp"
             android:layout_marginTop="5dp"
             android:background="#FFFFFF"
             android:gravity="center"
-            android:text="X"
+            android:text="@string/exist"
+            android:onClick="onClick"
             android:textColor="@color/highlight"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="290dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="기초교양"
+            android:text="@string/basic"
             android:textColor="@color/highlight"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
 
         <CheckBox
             android:layout_width="183dp"
@@ -40,9 +42,10 @@
             android:layout_marginTop="20dp"
             android:buttonTint="@color/highlight"
             android:checked="false"
-            android:text="글쓰기"
+            android:text="@string/write"
             android:textColor="@color/highlight"
-            android:textSize="30sp" />
+            android:textSize="30sp" tools:targetApi="lollipop"
+            android:layout_marginStart="40dp" />
 
 
         <LinearLayout
@@ -57,15 +60,17 @@
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
-                android:text="외국어"
+                android:text="@string/english"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" />
+                android:textSize="30sp" tools:targetApi="lollipop"
+                android:layout_marginStart="40dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginLeft="60dp">
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp">
 
                 <CheckBox
                     android:layout_width="258dp"
@@ -74,9 +79,9 @@
                     android:layout_marginTop="20dp"
                     android:buttonTint="@color/highlight"
                     android:checked="false"
-                    android:text="2과목이수(필수)"
+                    android:text="@string/englishnecessary"
                     android:textColor="@color/highlight"
-                    android:textSize="30sp" />
+                    android:textSize="30sp" tools:targetApi="lollipop" />
 
                 <CheckBox
                     android:layout_width="279dp"
@@ -84,9 +89,9 @@
                     android:layout_marginTop="20dp"
                     android:buttonTint="@color/highlight"
                     android:checked="false"
-                    android:text="1혹은2과목 이수"
+                    android:text="@string/subenglish"
                     android:textColor="@color/highlight"
-                    android:textSize="30sp" />
+                    android:textSize="30sp" tools:targetApi="lollipop" />
             </LinearLayout>
         </LinearLayout>
 
@@ -96,10 +101,11 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:checked="false"
-            android:text="논리적 사고"
+            android:text="@string/logic"
             android:buttonTint="@color/highlight"
             android:textColor="@color/highlight"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_marginStart="40dp" tools:targetApi="lollipop" />
 
     </LinearLayout>
 
@@ -116,9 +122,9 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center"
-            android:text="외국어 2과목 필수 이수"
+            android:text="@string/detailinfo"
             android:textColor="@color/highlight"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <ProgressBar
             android:id="@+id/PB기초교양"
