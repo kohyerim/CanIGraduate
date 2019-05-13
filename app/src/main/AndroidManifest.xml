@@ -28,6 +28,7 @@
         <activity android:name=".Kakao2Activity"></activity>
         <activity android:name=".Kakao3Activity"></activity>
         <activity android:name=".Kakao4Activity"></activity>
+        <activity android:name=".KakaopopupActivity"></activity>
     </application>
 
 </manifest>

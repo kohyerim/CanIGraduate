@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/grade2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="2학년"
+            android:background="@color/title"
+            android:textColor="@color/highlight"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/grade3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="3학년"
+            android:background="@color/title"
+            android:textColor="@color/highlight"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/grade4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="4학년"
+            android:background="@color/title"
+            android:textColor="@color/highlight"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+

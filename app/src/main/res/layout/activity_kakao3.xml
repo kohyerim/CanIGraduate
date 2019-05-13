@@ -22,6 +22,7 @@
             android:background="#FFFFFF"
             android:gravity="center"
             android:text="@string/exist"
+            android:onClick="onClick"
             android:textColor="@color/highlight"
             android:textSize="20sp"
             android:layout_marginStart="290dp" />
