@@ -12,8 +12,13 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    protected void onClick(View view){
+    protected void onClick_Login(View view){
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        finish();
+    }
+
+    protected void onClick_Signup(View view){
+        startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
         finish();
     }
 }
