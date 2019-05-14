@@ -19,7 +19,11 @@ public class StartActivity extends Activity {
     }
 
     protected void onClick(View view){
+<<<<<<< HEAD
         startActivity(new Intent(StartActivity.this, LoginActivity.class));
+=======
+        startActivity(new Intent(StartActivity.this, MainActivity.class));
+>>>>>>> 4e4b5d0c8b860ea02f1e1887f7a45c1231806f82
         finish();
     }
 }

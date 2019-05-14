@@ -1,10 +1,14 @@
 package com.example.canigraduate;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class Graduationpoint_kakaoActivity extends Activity {
     @Override
@@ -32,6 +36,10 @@ public class Graduationpoint_kakaoActivity extends Activity {
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, MajordetailActivity.class));
                 break;
             case R.id.B_카카오트랙:
+                startActivity(new Intent(Graduationpoint_kakaoActivity.this, KakaopopupActivity.class));
+                break;
+            case R.id.B_back:
+                startActivity(new Intent(Graduationpoint_kakaoActivity.this, CollectviewActivity.class));
                 break;
         }
     }
