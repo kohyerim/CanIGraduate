@@ -24,7 +24,8 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/editText2"
@@ -36,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462" />
+        app:layout_constraintVertical_bias="0.462"
+        android:importantForAutofill="no" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -52,7 +54,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:srcCompat="@drawable/login" />
+        app:srcCompat="@drawable/login"
+        android:contentDescription="TODO"
+        android:layout_marginStart="56dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -65,7 +69,8 @@
         android:onClick="onClick_Signup"
         app:layout_constraintBottom_toBottomOf="@+id/view3"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/signup" />
+        app:srcCompat="@drawable/signup"
+        android:contentDescription="TODO" />
 
 
 </android.support.constraint.ConstraintLayout>

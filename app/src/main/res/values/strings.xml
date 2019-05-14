@@ -52,4 +52,6 @@
     <string name="subenglish">1혹은2과목 이수</string>
     <string name="logic">논리적 사고</string>
     <string name="detailinfo">외국어 2과목 필수 이수</string>
+    <string name="gotoactivity">goToActivity</string>
+    <string name="go">go</string>
 </resources>
