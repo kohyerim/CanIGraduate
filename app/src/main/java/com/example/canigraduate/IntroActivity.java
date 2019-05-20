@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.widget.ImageView;
 
 public class IntroActivity extends Activity {
-
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);

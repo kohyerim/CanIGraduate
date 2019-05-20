@@ -54,4 +54,6 @@
     <string name="detailinfo">외국어 2과목 필수 이수</string>
     <string name="gotoactivity">goToActivity</string>
     <string name="go">go</string>
+    <string name="dbtest">DBTEST</string>
+    <string name="textview">TextView</string>
 </resources>
