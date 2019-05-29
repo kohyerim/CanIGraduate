@@ -149,7 +149,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/B_back"
+        android:id="@+id/B_Back"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginLeft="30dp"
@@ -157,6 +157,7 @@
         android:background="@color/title"
         android:gravity="center"
         android:text="@string/back"
+        android:onClick="onClick"
         android:layout_marginStart="30dp" />
 
 

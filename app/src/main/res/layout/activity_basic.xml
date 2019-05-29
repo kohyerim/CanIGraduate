@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/B_back"
+            android:id="@+id/B_Back"
             android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="290dp"

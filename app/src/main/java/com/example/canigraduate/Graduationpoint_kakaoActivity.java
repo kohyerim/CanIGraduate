@@ -22,24 +22,30 @@ public class Graduationpoint_kakaoActivity extends Activity {
         switch (view.getId()){
             case R.id.B_기초교양:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, BasicActivity.class));
+                finish();
                 break;
             case R.id.B_전공탐색:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, MajorsearchActivity.class));
+                finish();
                 break;
             case R.id.B_전인교양:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, WholecultureActivity.class));
+                finish();
                 break;
             case R.id.B_JNU:
 
                 break;
             case R.id.B_필수전공:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, MajordetailActivity.class));
+                finish();
                 break;
             case R.id.B_카카오트랙:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, KakaopopupActivity.class));
+                finish();
                 break;
-            case R.id.B_back:
+            case R.id.B_Back:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, CollectviewActivity.class));
+                finish();
                 break;
         }
     }

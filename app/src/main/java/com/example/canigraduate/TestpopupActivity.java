@@ -9,34 +9,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
-
-public class KakaopopupActivity extends Activity {
+public class TestpopupActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_graduationpoint_kakao);
+        setContentView(R.layout.activity_collectview);
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        LinearLayout linearLayout = (LinearLayout) inflater.inflate(R.layout.activity_kakaopopup, null);
+        LinearLayout linearLayout = (LinearLayout) inflater.inflate(R.layout.activity_testpopup, null);
         linearLayout.setBackgroundColor(Color.parseColor("#99000000"));
         LinearLayout.LayoutParams paramll = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);
         addContentView(linearLayout, paramll);
     }
 
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.grade2:
-                startActivity(new Intent(KakaopopupActivity.this, Kakao2Activity.class));
-                finish();
-                break;
-            case R.id.grade3:
-                startActivity(new Intent(KakaopopupActivity.this, Kakao3Activity.class));
-                finish();
-                break;
-            case R.id.grade4:
-                startActivity(new Intent(KakaopopupActivity.this, Kakao4Activity.class));
-                finish();
-                break;
-        }
+        startActivity(new Intent(TestpopupActivity.this, CollectviewActivity.class));
+        finish();
     }
 }
+
+

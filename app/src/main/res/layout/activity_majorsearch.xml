@@ -93,14 +93,15 @@
             <CheckBox
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:checked="false"
-                android:text="@string/humanities"
                 android:buttonTint="@color/highlight"
+                android:checked="false"
+                android:text="예체능계열"
                 android:textColor="@color/highlight"
                 android:textSize="30sp"
-                android:layout_marginStart="40dp" tools:targetApi="lollipop" />
+                tools:targetApi="lollipop" />
 
 
         </LinearLayout>

@@ -15,9 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         //DbOpenHelper mDbOpenHelper = new DbOpenHelper(this);
         //mDbOpenHelper.open();
         //mDbOpenHelper.create();
@@ -34,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void onClick(View view){
-        startActivity(new Intent(MainActivity.this, Graduationpoint_kakaoActivity.class));
+        startActivity(new Intent(MainActivity.this, CollectviewActivity.class));
         finish();
     }
 

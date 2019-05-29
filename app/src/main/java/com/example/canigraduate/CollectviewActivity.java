@@ -18,10 +18,13 @@ public class CollectviewActivity extends Activity {
         switch (view.getId()){
             case R.id.B_졸업학점:
                 startActivity(new Intent(CollectviewActivity.this, Graduationpoint_kakaoActivity.class));
+                finish();
                 break;
             case R.id.B_전공학점:
                 break;
             case R.id.B_자격증:
+                startActivity(new Intent(CollectviewActivity.this, TestpopupActivity.class));
+                finish();
                 break;
         }
     }

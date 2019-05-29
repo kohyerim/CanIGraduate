@@ -56,4 +56,11 @@
     <string name="go">go</string>
     <string name="dbtest">DBTEST</string>
     <string name="textview">TextView</string>
+    <string name="testinfo">
+        \n
+        - 졸업 종합 시험\n
+        - 전시회 졸업작품 제출\n
+        - 전산관련 자격증 2개 이상\n
+        - 공모전 수상/학술대회 참가
+    </string>
 </resources>
