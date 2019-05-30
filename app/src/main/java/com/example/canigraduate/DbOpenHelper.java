@@ -9,11 +9,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbOpenHelper {
 
-    public static final String DATABASE_NAME = "InnerDatabase(SQLite).db";
+    public static final String DATABASE_NAME = "Database.db";
     public static final int DATABASE_VERSION = 1;
     public static SQLiteDatabase mDB;
-    private DatabaseHelper mDBHelper;
+    public static DatabaseHelper mDBHelper;
     private Context mCtx;
+
+    public static String db_name;
 
     private class DatabaseHelper extends SQLiteOpenHelper {
         public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version){
@@ -35,8 +37,9 @@ public class DbOpenHelper {
     }
 
     public DbOpenHelper open() throws SQLException{
-        mDBHelper = new DatabaseHelper(mCtx, DATABASE_NAME, null, DATABASE_VERSION);
-        mDB = mDBHelper.getWritableDatabase();
+        this.mDBHelper = new DatabaseHelper(mCtx, DATABASE_NAME, null, DATABASE_VERSION);
+        this.mDB = this.mDBHelper.getWritableDatabase();
+        //db_name = mDBHelper.getDatabaseName();
         return this;
     }
 
@@ -68,9 +71,9 @@ public class DbOpenHelper {
         values.put(Database.CreateDB.NAME, name);
         values.put(Database.CreateDB.STUDENTNUM, studentID);
         values.put(Database.CreateDB.MAJOR, major);
-//        values.put(Database.CreateDB.OTHERMAJOR, otherMajor);
-//        values.put("EXAMGRADE", grade);
-//        values.put("KAKAOTRACK", kakaoTrack);
+        values.put(Database.CreateDB.OTHERMAJOR, otherMajor);
+        values.put(Database.CreateDB.EXAMGRADE, grade);
+        values.put(Database.CreateDB.KAKAOTRACK, kakaoTrack);
 
         return mDB.update(Database.CreateDB._TABLENAME0, values, "_id=" + id, null) > 0;
     }
