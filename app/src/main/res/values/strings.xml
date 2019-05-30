@@ -57,7 +57,7 @@
     <string name="dbtest">DBTEST</string>
     <string name="textview">TextView</string>
     <string name="testinfo">
-        \n
+        시험/자격증 INFO\n\n
         - 졸업 종합 시험\n
         - 전시회 졸업작품 제출\n
         - 전산관련 자격증 2개 이상\n

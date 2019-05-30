@@ -17,16 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
-        //DbOpenHelper mDbOpenHelper = new DbOpenHelper(this);
-        //mDbOpenHelper.open();
-        //mDbOpenHelper.create();
-=======
         final DbOpenHelper mDbOpenHelper = new DbOpenHelper(MainActivity.this);
         mDbOpenHelper.open();
         mDbOpenHelper.create();
 
->>>>>>> upstream/master
 
         final TextView text = (TextView)findViewById(R.id.textView);
         Button btn = (Button)findViewById(R.id.button3);
@@ -41,13 +35,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-<<<<<<< HEAD
-    protected void onClick(View view){
-        startActivity(new Intent(MainActivity.this, CollectviewActivity.class));
-=======
+
     public void onClick(View view){
-        startActivity(new Intent(MainActivity.this, Graduationpoint_kakaoActivity.class));
->>>>>>> upstream/master
+        startActivity(new Intent(MainActivity.this, CollectviewActivity.class));
         finish();
     }
 

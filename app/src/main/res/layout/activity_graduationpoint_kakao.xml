@@ -157,13 +157,9 @@
         android:layout_marginTop="15dp"
         android:background="@color/title"
         android:gravity="center"
-<<<<<<< HEAD
-        android:text="@string/back"
         android:onClick="onClick"
-        android:layout_marginStart="30dp" />
-=======
         android:text="@string/back" />
->>>>>>> upstream/master
+
 
 
 </LinearLayout>

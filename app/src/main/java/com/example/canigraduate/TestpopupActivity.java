@@ -16,10 +16,10 @@ public class TestpopupActivity extends Activity{
         setContentView(R.layout.activity_collectview);
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        LinearLayout linearLayout = (LinearLayout) inflater.inflate(R.layout.activity_testpopup, null);
-        linearLayout.setBackgroundColor(Color.parseColor("#99000000"));
+        LinearLayout linearLayout1 = (LinearLayout) inflater.inflate(R.layout.activity_testpopup, null);
+        linearLayout1.setBackgroundColor(Color.parseColor("#99000000"));
         LinearLayout.LayoutParams paramll = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);
-        addContentView(linearLayout, paramll);
+        addContentView(linearLayout1, paramll);
     }
 
     public void onClick(View view) {
