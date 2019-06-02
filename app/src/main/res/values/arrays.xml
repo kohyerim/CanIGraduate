@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="student_num">
+        <item>14학번</item>
+        <item>15학번</item>
+        <item>16학번</item>
+        <item>17학번</item>
+        <item>18학번</item>
+        <item>19학번</item>
+    </string-array>
+
+    <string-array name="otherMajor">
+        <item>복수/연계전공 있음</item>
+        <item>복수/연계전공 없음</item>
+    </string-array>
+
+    <string-array name="examGrade">
+        <item>1등급</item>
+        <item>2등급</item>
+        <item>3등급</item>
+        <item>4등급</item>
+        <item>5등급</item>
+        <item>6등급</item>
+        <item>7등급</item>
+        <item>8등급</item>
+        <item>9등급</item>
+    </string-array>
+
+    <string-array name="kakao">
+        <item>카카오트랙 이수</item>
+        <item>카카오트랙 미이수</item>
+    </string-array>
+</resources>

@@ -21,6 +21,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="28dp"
         android:background="@android:color/transparent"
+        android:onClick="onClick_Continue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/continue_btn" />
@@ -66,7 +67,7 @@
         android:id="@+id/major"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="3dp"
         android:text="@string/usermajor"
         app:layout_constraintEnd_toEndOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -75,11 +76,13 @@
         android:id="@+id/edit_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="45dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/major"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name"
         app:srcCompat="@drawable/edit_btn" />
 
     <View
@@ -88,7 +91,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="49dp"
         android:layout_marginLeft="49dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="93dp"
         android:layout_marginEnd="49dp"
         android:layout_marginRight="49dp"
         android:layout_marginBottom="93dp"
@@ -96,6 +99,47 @@
         app:layout_constraintBottom_toBottomOf="@+id/continue_btn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edit_pic" />
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+    <Spinner
+        android:id="@+id/spinner_num"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueView" />
+
+    <Spinner
+        android:id="@+id/spinner_otherMajor"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:background="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueView" />
+
+    <Spinner
+        android:id="@+id/spinner_grade"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="168dp"
+        android:background="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueView" />
+
+    <Spinner
+        android:id="@+id/spinner_kakao"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="236dp"
+        android:background="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueView" />
+
 
 </android.support.constraint.ConstraintLayout>

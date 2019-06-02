@@ -27,10 +27,11 @@ public class SignUpActivity extends AppCompatActivity {
 
     protected void onClick_Signup(View view){
         startActivity(new Intent(SignUpActivity.this, PrimalActivity.class));
-        mDbOpenHelper.open();
-        mDbOpenHelper.create();
-        DBcontrol.insertColumn(UserInfo.userID, UserInfo.userPW, UserInfo.userID);
-        System.out.println("done");
+//        mDbOpenHelper.open();
+//        mDbOpenHelper.create();
+//        DBcontrol.insertColumn(UserInfo.userID, UserInfo.userPW, UserInfo.userID);
+//        System.out.println("done");
+        finish();
     }
 
 
