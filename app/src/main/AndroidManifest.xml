@@ -32,6 +32,7 @@
         <activity android:name=".KakaopopupActivity"></activity>
         <activity android:name=".TestpopupActivity"></activity>
         <activity android:name=".JnupopupActivity" />
+        <activity android:name=".PrimalActivity"></activity>
     </application>
 
 </manifest>

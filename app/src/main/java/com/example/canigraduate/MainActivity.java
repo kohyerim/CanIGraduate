@@ -1,38 +1,52 @@
 package com.example.canigraduate;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
+    DbOpenHelper mDbOpenHelper;
+    DbControl mDbControl;
+    Cursor iCusor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final DbOpenHelper mDbOpenHelper = new DbOpenHelper(MainActivity.this);
+        mDbOpenHelper = new DbOpenHelper(MainActivity.this);
+        mDbControl = new DbControl();
         mDbOpenHelper.open();
         mDbOpenHelper.create();
 
 
+        Drawable drawable_profile = getResources().getDrawable(R.drawable.profile);
+        Drawable drawable_edit = getResources().getDrawable(R.drawable.edit_btn);
+
+        ImageView profile_pic = (ImageView) findViewById(R.id.profile_pic4);
+        ImageView edit_pic = (ImageView) findViewById(R.id.edit_pic4);
+
+        profile_pic.setImageDrawable(drawable_profile);
+        edit_pic.setImageDrawable(drawable_edit);
+
+
+    }
+
+    public void onClick_Test(View view){
+        iCusor = mDbControl.selectColumn();
+        iCusor.moveToFirst();
+        String name = iCusor.getString(iCusor.getColumnIndex(Database.CreateDB.NAME));
+
+
         final TextView text = (TextView)findViewById(R.id.textView);
-        Button btn = (Button)findViewById(R.id.button3);
 
-        System.out.println(Database.CreateDB._CREATE0);
-
-
-        btn.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View view){
-                text.setText("test");
-            }
-        });
+        text.setText(name);
     }
 
 

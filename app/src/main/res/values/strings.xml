@@ -63,4 +63,7 @@
         - 전산관련 자격증 2개 이상\n
         - 공모전 수상/학술대회 참가
     </string>
+    <string name="username">name</string>
+    <string name="usermajor">major</string>
+>>>>>>> upstream/master
 </resources>
