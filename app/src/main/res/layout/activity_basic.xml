@@ -36,16 +36,18 @@
             android:textSize="40sp" />
 
         <CheckBox
+            android:id="@+id/writing"
             android:layout_width="183dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:buttonTint="@color/highlight"
             android:checked="false"
             android:text="@string/write"
             android:textColor="@color/highlight"
-            android:textSize="30sp" tools:targetApi="lollipop"
-            android:layout_marginStart="40dp" />
+            android:textSize="30sp"
+            tools:targetApi="lollipop" />
 
 
         <LinearLayout
@@ -54,16 +56,18 @@
             android:orientation="vertical">
 
             <CheckBox
+                android:id="@+id/foreignfinal"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/english"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,17 +77,20 @@
                 android:layout_marginStart="60dp">
 
                 <CheckBox
+                    android:id="@+id/foreign2"
                     android:layout_width="258dp"
-                    android:layout_height="wrap_content"
 
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:buttonTint="@color/highlight"
                     android:checked="false"
                     android:text="@string/englishnecessary"
                     android:textColor="@color/highlight"
-                    android:textSize="30sp" tools:targetApi="lollipop" />
+                    android:textSize="30sp"
+                    tools:targetApi="lollipop" />
 
                 <CheckBox
+                    android:id="@+id/foreign"
                     android:layout_width="279dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -91,21 +98,24 @@
                     android:checked="false"
                     android:text="@string/subenglish"
                     android:textColor="@color/highlight"
-                    android:textSize="30sp" tools:targetApi="lollipop" />
+                    android:textSize="30sp"
+                    tools:targetApi="lollipop" />
             </LinearLayout>
         </LinearLayout>
 
         <CheckBox
+            android:id="@+id/logic"
             android:layout_width="183dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
+            android:buttonTint="@color/highlight"
             android:checked="false"
             android:text="@string/logic"
-            android:buttonTint="@color/highlight"
             android:textColor="@color/highlight"
             android:textSize="30sp"
-            android:layout_marginStart="40dp" tools:targetApi="lollipop" />
+            tools:targetApi="lollipop" />
 
     </LinearLayout>
 
@@ -127,10 +137,12 @@
             android:textSize="20sp" />
 
         <ProgressBar
-            android:id="@+id/PB기초교양"
+            android:id="@+id/PB_basic"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="55dp" />
+            android:layout_height="55dp"
+            android:max="8"
+            android:progress="0"/>
     </LinearLayout>
 
 

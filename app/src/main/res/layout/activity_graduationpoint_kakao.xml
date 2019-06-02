@@ -28,10 +28,12 @@
                 android:textColor="@color/highlight" />
 
             <ProgressBar
-                android:id="@+id/PB기초교양"
+                android:id="@+id/PB_basic"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
-                android:layout_height="35dp" />
+                android:layout_height="35dp"
+                android:max="8"
+                android:progress="0"/>
         </LinearLayout>
 
         <LinearLayout
@@ -50,10 +52,12 @@
                 android:textColor="@color/highlight" />
 
             <ProgressBar
-                android:id="@+id/PB_전공탐색"
+                android:id="@+id/PB_majorsearch"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
-                android:layout_height="35dp" />
+                android:layout_height="35dp"
+                android:max="10"
+                android:progress="0"/>
         </LinearLayout>
 
         <LinearLayout
@@ -72,10 +76,12 @@
                 android:textColor="@color/highlight" />
 
             <ProgressBar
-                android:id="@+id/PB_전인교양"
+                android:id="@+id/PB_wholecultre"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
-                android:layout_height="35dp" />
+                android:layout_height="35dp"
+                android:max="10"
+                android:progress="0"/>
 
         </LinearLayout>
 
@@ -98,7 +104,9 @@
                 android:id="@+id/PB_JNU"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
-                android:layout_height="35dp" />
+                android:layout_height="35dp"
+                android:max="2"
+                android:progress="0"/>
         </LinearLayout>
 
         <LinearLayout
@@ -117,10 +125,12 @@
                 android:textColor="@color/highlight" />
 
             <ProgressBar
-                android:id="@+id/PB_필수전공"
+                android:id="@+id/PB_major"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
-                android:layout_height="35dp" />
+                android:layout_height="35dp"
+                android:max="12"
+                android:progress="0"/>
 
         </LinearLayout>
 
@@ -140,10 +150,12 @@
                 android:textColor="@color/highlight" />
 
             <ProgressBar
-                android:id="@+id/PB_카카오트랙"
+                android:id="@+id/PB_kakao"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
-                android:layout_height="35dp" />
+                android:layout_height="35dp"
+                android:max="13"
+                android:progress="0"/>
 
         </LinearLayout>
     </LinearLayout>

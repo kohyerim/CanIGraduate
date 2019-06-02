@@ -43,44 +43,52 @@
             >
 
             <CheckBox
+                android:id="@+id/datastructure"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/datastructure"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/datacommnuication"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/informationCommunication"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/CAPSTONE1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/swcapston1"
                 android:textColor="@color/highlight"
-                android:textSize="25sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="25sp"
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/CAPSTON2"
                 android:layout_width="303dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
@@ -88,11 +96,13 @@
                 android:text="@string/swcapstion2"
                 android:textColor="@color/highlight"
                 android:textSize="25sp"
-                android:layout_marginStart="40dp" tools:targetApi="lollipop" />
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/CAPSTON3"
                 android:layout_width="302dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
@@ -100,7 +110,7 @@
                 android:text="@string/swcapston3"
                 android:textColor="@color/highlight"
                 android:textSize="25sp"
-                android:layout_marginStart="40dp" tools:targetApi="lollipop" />
+                tools:targetApi="lollipop" />
 
 
         </LinearLayout>
@@ -124,10 +134,12 @@
             android:textSize="20sp" />
 
         <ProgressBar
-            android:id="@+id/PB필수전공"
+            android:id="@+id/PB_datastructure"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="55dp" />
+            android:layout_height="55dp"
+            android:max="12"
+            android:progress="0"/>
     </LinearLayout>
 
 </LinearLayout>
