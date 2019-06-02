@@ -1,5 +1,6 @@
 package com.example.canigraduate;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -7,14 +8,21 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class Graduationpoint_kakaoActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graduationpoint_kakao);
+
+        //  LayoutInflater 객체와 시킴
+        LayoutInflater inflater = (LayoutInflater) Graduationpoint_kakaoActivity.this
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        
     }
 
 
@@ -33,7 +41,8 @@ public class Graduationpoint_kakaoActivity extends Activity {
                 finish();
                 break;
             case R.id.B_JNU:
-
+                startActivity(new Intent(Graduationpoint_kakaoActivity.this, JnupopupActivity.class));
+                finish();
                 break;
             case R.id.B_필수전공:
                 startActivity(new Intent(Graduationpoint_kakaoActivity.this, MajordetailActivity.class));
