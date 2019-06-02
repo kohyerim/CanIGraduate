@@ -18,12 +18,10 @@ public class PrimalActivity extends Activity {
 
         ImageView profile_pic = (ImageView) findViewById(R.id.profile_pic);
         ImageView edit_pic = (ImageView) findViewById(R.id.edit_pic);
-        ImageView blueView = (ImageView) findViewById(R.id.blueView);
         ImageView continue_btn = (ImageView) findViewById(R.id.continue_btn2);
 
         profile_pic.setImageDrawable(drawable_profile);
         edit_pic.setImageDrawable(drawable_edit);
-        blueView.setImageDrawable(drawable_blueView);
         continue_btn.setImageDrawable(drawable_continue);
 
     }
