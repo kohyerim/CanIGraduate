@@ -14,5 +14,6 @@ public class Kakao4Activity extends Activity {
 
     public void onClick(View view) {
         startActivity(new Intent(Kakao4Activity.this, Graduationpoint_kakaoActivity.class));
+        finish();
     }
 }

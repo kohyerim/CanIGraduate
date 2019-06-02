@@ -49,8 +49,9 @@ public class MainActivity extends Activity {
         text.setText(name);
     }
 
+
     public void onClick(View view){
-        startActivity(new Intent(MainActivity.this, Graduationpoint_kakaoActivity.class));
+        startActivity(new Intent(MainActivity.this, CollectviewActivity.class));
         finish();
     }
 

@@ -27,12 +27,15 @@ public class KakaopopupActivity extends Activity {
         switch (view.getId()) {
             case R.id.grade2:
                 startActivity(new Intent(KakaopopupActivity.this, Kakao2Activity.class));
+                finish();
                 break;
             case R.id.grade3:
                 startActivity(new Intent(KakaopopupActivity.this, Kakao3Activity.class));
+                finish();
                 break;
             case R.id.grade4:
                 startActivity(new Intent(KakaopopupActivity.this, Kakao4Activity.class));
+                finish();
                 break;
         }
     }

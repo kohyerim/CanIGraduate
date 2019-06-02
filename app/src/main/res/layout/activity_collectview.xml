@@ -1,15 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:srcCompat="@drawable/profile" />
+
+
+        <LinearLayout
+            android:layout_width="207dp"
+            android:layout_height="186dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/primal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="10dp"
+                android:background="@color/title"
+                android:gravity="center"
+                android:text="HOME"
+                android:textColor="#2699FB"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/username"
+                android:textColor="#2699FB"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/profile_pic"
+                app:layout_constraintTop_toBottomOf="@+id/primal_title" />
+
+            <TextView
+                android:id="@+id/major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/usermajor"
+                app:layout_constraintEnd_toEndOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/edit_btn" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_gravity="center"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="@android:dimen/dialog_min_width_minor"
         android:background="@color/title"
         android:orientation="vertical">
 
@@ -98,8 +174,7 @@
                 <Switch
                     android:id="@+id/switch1"
                     android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-                    android:text="" />
+                    android:layout_height="27dp" />
             </LinearLayout>
 
             <ProgressBar

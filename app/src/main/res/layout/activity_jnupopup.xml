@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/jnuinfo"
+            android:layout_width="239dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="bottom|left"
+            android:text="\nJNU INFO\n\n- 제주형 레저\n- 제주의 ICT\n- 제주와 아시아\n\n 1교과목 필수 이수
+                        "
+            android:textColor="@color/highlight"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/exist"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:text="@string/exist"
+            android:textColor="@color/highlight" />
+
+    </LinearLayout>
+
+</LinearLayout>
