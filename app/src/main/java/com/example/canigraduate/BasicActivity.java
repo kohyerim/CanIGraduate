@@ -16,7 +16,6 @@ public class BasicActivity extends Activity {
     DbControl mDbControl;
     Cursor iCusor;
     int[] pbBasic = new int[] {0,0,0,0,0};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
