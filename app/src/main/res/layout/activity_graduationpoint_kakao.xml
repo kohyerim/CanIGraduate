@@ -28,7 +28,7 @@
                 android:textColor="@color/highlight" />
 
             <ProgressBar
-                android:id="@+id/PB기초교양"
+                android:id="@+id/PB_basic"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="330dp"
                 android:layout_height="35dp" />

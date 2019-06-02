@@ -1,9 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/majorsearch"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
-    android:orientation="vertical"
-    android:background="@color/title">
+    android:background="@color/title"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="350dp"
@@ -17,15 +19,15 @@
             android:id="@+id/button"
             android:layout_width="54dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="290dp"
             android:layout_marginLeft="290dp"
             android:layout_marginTop="5dp"
             android:background="#FFFFFF"
             android:gravity="center"
-            android:text="@string/exist"
             android:onClick="onClick"
+            android:text="@string/exist"
             android:textColor="@color/highlight"
-            android:textSize="20sp"
-            android:layout_marginStart="290dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/detail_majorsearch"
@@ -39,58 +41,66 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <CheckBox
+                android:id="@+id/humanity"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/humanities"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/society"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/social"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/technology"
                 android:layout_width="281dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/naturalsciences"
                 android:textColor="@color/highlight"
-                android:textSize="30sp" tools:targetApi="lollipop"
-                android:layout_marginStart="40dp" />
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/enginerring"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
+                android:buttonTint="@color/highlight"
                 android:checked="false"
                 android:text="@string/engineering"
-                android:buttonTint="@color/highlight"
                 android:textColor="@color/highlight"
                 android:textSize="30sp"
-                android:layout_marginStart="40dp" tools:targetApi="lollipop" />
+                tools:targetApi="lollipop" />
 
             <CheckBox
+                android:id="@+id/artandphysical"
                 android:layout_width="183dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -125,10 +135,12 @@
             android:textSize="20sp" />
 
         <ProgressBar
-            android:id="@+id/PB전공탐색"
+            android:id="@+id/PB_majorsearch"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="55dp" />
+            android:layout_height="55dp"
+            android:max="10"
+            android:progress="0"/>
     </LinearLayout>
 
 </LinearLayout>

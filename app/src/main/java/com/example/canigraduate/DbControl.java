@@ -41,7 +41,6 @@ public class DbControl {
 
         return mDB.update(Database.CreateDB._TABLENAME0, values, "_id = " + UserInfo.id, null) > 0;
     }
-
     public boolean updateWholeCultureColumn(int language, int history, int culture, int technology, int art, int personality){
         ContentValues values = new ContentValues();
         values.put(Database.CreateDB.LAGUAGE, language);
