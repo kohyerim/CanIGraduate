@@ -70,7 +70,9 @@ public final class Database {
         //query
         public static final String _TABLENAME0 = "UserTable";
         public static final String _CREATE0 = "create table if not exists " + _TABLENAME0 + " ("
-                + ID + " text not null, " + PW + " text not null, " + EMAIL + " text not null, " + STUDENTNUM + " text not null, "
+                +_ID+" integer primary key autoincrement, "
+                + ID + " text not null, " + PW + " text not null, " + EMAIL + " text not null, "
+                + NAME + " text not null, " + STUDENTNUM + " text not null, "
                 + MAJOR + " text not null, " + OTHERMAJOR + " text, "
                 + EXAMGRADE + " integer not null, " + KAKAOTRACK + " integer not null, " + TOEIC + " integer not null, "
                 + TEST_CERT + " integer not null, " + WRITING + " integer not null, "

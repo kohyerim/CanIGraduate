@@ -56,4 +56,6 @@
     <string name="go">go</string>
     <string name="dbtest">DBTEST</string>
     <string name="textview">TextView</string>
+    <string name="username">name</string>
+    <string name="usermajor">major</string>
 </resources>

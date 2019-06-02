@@ -52,31 +52,5 @@ public class DbOpenHelper {
     }
 
 
-    public long insertSignUpColumn(String id, String pw, String email){
-        ContentValues values = new ContentValues();
-        values.put(Database.CreateDB.ID, id);
-        values.put(Database.CreateDB.PW, pw);
-        values.put(Database.CreateDB.EMAIL, email);
-
-        return mDB.insert(Database.CreateDB._TABLENAME0, null, values);
-    }
-
-
-    public Cursor selectColumn(){
-        return mDB.query(Database.CreateDB._TABLENAME0, null, null, null, null, null, null);
-    }
-
-    public boolean updatePrimaryColumn(long id, String name, String studentID, String major, String otherMajor, int grade, boolean kakaoTrack){
-        ContentValues values = new ContentValues();
-        values.put(Database.CreateDB.NAME, name);
-        values.put(Database.CreateDB.STUDENTNUM, studentID);
-        values.put(Database.CreateDB.MAJOR, major);
-        values.put(Database.CreateDB.OTHERMAJOR, otherMajor);
-        values.put(Database.CreateDB.EXAMGRADE, grade);
-        values.put(Database.CreateDB.KAKAOTRACK, kakaoTrack);
-
-        return mDB.update(Database.CreateDB._TABLENAME0, values, "_id=" + id, null) > 0;
-    }
-
 
 }

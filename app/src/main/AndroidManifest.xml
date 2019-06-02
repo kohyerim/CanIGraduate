@@ -30,6 +30,7 @@
         <activity android:name=".Kakao3Activity"></activity>
         <activity android:name=".Kakao4Activity"></activity>
         <activity android:name=".KakaopopupActivity"></activity>
+        <activity android:name=".PrimalActivity"></activity>
     </application>
 
 </manifest>
