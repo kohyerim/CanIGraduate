@@ -13,7 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     protected void onClick_Login(View view){
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        startActivity(new Intent(LoginActivity.this, CollectviewActivity.class));
         finish();
     }
 

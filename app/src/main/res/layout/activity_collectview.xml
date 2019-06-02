@@ -85,7 +85,7 @@
         android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_gravity="center"
-        android:layout_marginTop="@android:dimen/dialog_min_width_minor"
+        android:layout_marginTop="-50dp"
         android:background="@color/title"
         android:orientation="vertical">
 

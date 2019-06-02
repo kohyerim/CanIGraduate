@@ -29,8 +29,8 @@ public class MainActivity extends Activity {
         Drawable drawable_profile = getResources().getDrawable(R.drawable.profile);
         Drawable drawable_edit = getResources().getDrawable(R.drawable.edit_btn);
 
-        ImageView profile_pic = (ImageView) findViewById(R.id.profile_pic4);
-        ImageView edit_pic = (ImageView) findViewById(R.id.edit_pic4);
+        ImageView profile_pic = (ImageView) findViewById(R.id.profile_pic);
+        ImageView edit_pic = (ImageView) findViewById(R.id.edit_pic);
 
         profile_pic.setImageDrawable(drawable_profile);
         edit_pic.setImageDrawable(drawable_edit);
